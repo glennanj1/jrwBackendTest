@@ -8,9 +8,11 @@ app.get('/', (req, res) => {
 
 app.get('/form', (req, res) => {
     console.log(req.body);
-    res.send('Hey From The Form Route');
+    res.send('Get all forms route');
 })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+
