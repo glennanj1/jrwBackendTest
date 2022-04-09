@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const formSchema = new Schema({
-  firstName: {type: String, required: true, maxlength: 20},
+  firstName: {type: String, maxlength: 20},
   lastName: {type: String, required: true, maxlength: 20},
   // not sure if should be string or number
   // set max length incase use of "-" in string
@@ -14,4 +14,4 @@ const formSchema = new Schema({
   }
 );
 
-module.exports = mongoose.model('form', formSchema);
+module.exports = mongoose.model('Quotes', formSchema);
